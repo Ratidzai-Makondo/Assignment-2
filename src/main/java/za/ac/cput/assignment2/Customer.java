@@ -11,18 +11,16 @@ public class Customer {
     private int key;
     private String name;
     private String city;
-    private String email_address;
 
-    public Customer() {
-    }
 
-    public int getKey() {
-        return key;
-    }
+
 
     public Customer(String name, int key) {
         this.name = name;
         this.key = key;
+    }
+    public int getKey() {
+        return key;
     }
 
     public String getName() {
@@ -37,30 +35,20 @@ public class Customer {
         this.key = key;
     }
 
-    public String getEmail_address() {
-        return email_address;
-    }
-
     public void setName(String name) {
         this.name = name;
     }
-
 
     public void setCity(String city) {
         this.city = city;
     }
 
-    public void setEmail_address(String email_address) {
-        this.email_address = email_address;
-    }
-
     public void show() {
         System.out.println("The name of the customer is as follows" + " " + name);
         System.out.println("The city is as follows" + " " + city);
-        System.out.println("The email is as follows" + " " + email_address);
+
     }
-
-
+    
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
