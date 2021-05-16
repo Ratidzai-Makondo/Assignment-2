@@ -109,7 +109,7 @@ public class CustomerTest {
     void List() {
         List<String> customerList = new ArrayList<>();  // list
         for (int i = 0; i < 1; i++) {
-            
+
             //add
             customerList.add("Adi");
             customerList.add("Anna");
